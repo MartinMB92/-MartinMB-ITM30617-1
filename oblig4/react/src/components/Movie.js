@@ -1,10 +1,12 @@
-function Movie(titles, actors) {
+function Movie({ title, actor }) {
   return (
-    <>
-      {titles.map((movie) => (
-        <Movie title={titles} actor={actors} />
-      ))}
-    </>
+    <div>
+      Title: {title}
+      <br />
+      Actor: {actor}
+      <br />
+      <br />
+    </div>
   );
 }
 
